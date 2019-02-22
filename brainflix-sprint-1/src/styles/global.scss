@@ -1,0 +1,307 @@
+//VARIABLES
+$black: #323232; 
+$white: #FFFFFF;
+$alabaster: #FAFAFA;
+$mercury: #E1E1E1;
+$silver: #AFAFAF;
+$blue: #2196f3; 
+
+//FONTS
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('/BrainFlix-Sprint-1/4.0 - Assets/_Global Font/AvenirNextProLT');
+}
+
+//MIXIN 
+@mixin add-divider {
+    width: 84%;
+    margin: 2% 0 2% 16%;
+    height: 2px;
+    box-shadow: 0 2px 0 $alabaster; 
+}
+
+body {
+    margin: 0;
+    font-family: 'Avenir Next';
+    color: $black;
+}
+
+.Nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 65px;
+
+    .Navlinks {
+        display: flex;
+        width: 40%;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 70px;
+
+        .Nav__search {
+            background-image: url('../BrainFlix-Sprint-1/4.0\ -\ Assets/Icons/PNG/Icon-search.png');
+            background-color: $alabaster;
+            background-size: 8%;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-position-x: 15px;
+            font-size: 14px;
+            padding: 2.5% 7%;
+            margin-left: 70px;
+            outline: none;
+            border: 1px solid $mercury;
+            border-radius: 3px;
+            text-indent: 5px;
+            font-size: 12px;
+            color: $black;
+            }
+        
+            .Nav__button {
+                background-image: url('../BrainFlix-Sprint-1/4.0 - Assets/Icons/PNG/Icon-upload.png');
+                background-size: 12%;
+                background-repeat: no-repeat;
+                background-position: left;
+                background-position-x: 15px;
+                background-color: $blue;
+                text-indent: 15px;
+                color: $white;
+                padding: 2% 3%;
+            }
+        
+            .Nav__profile {
+                border-radius: 50%;
+                width: 48px;
+                height: 46px;
+    }
+
+    }
+}
+
+.Video {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+
+    .Video__player {
+        width: 70%;
+        height: 100%;
+    }
+}
+
+.more-content {
+    display: flex;
+    flex-flow: row nowrap;
+
+    .more-content__this-video {
+        width: 65%;
+        height: 100%;
+        border-right: 2px solid $alabaster;
+
+        .VideoInfo {
+            display: flex;
+            flex-flow: column nowrap;
+            
+            .VideoInfo__header {
+                margin-left: 16%;
+                font-size: 2rem;
+
+            }
+        
+            .VideoInfo__details {
+                width: 80%;
+                margin-left: 16%;
+                .user {
+                    float: left;
+                    font-weight: bold;
+                }
+                .date {
+                    float: left;
+                    margin: 2px 10px;
+                    color: $silver;
+                    font-size: .9rem;
+                }
+        
+                .views, .views__icon, .likes, .likes__icon  {
+                    float: right;
+                    margin: 3px;
+                    font-size: .9rem;
+                    color: $black;
+                }
+                
+                .views {
+                    margin-right: 20px;
+                }
+        
+            }
+            
+            .divider {
+                @include add-divider();
+            }
+            .VideoInfo__p {
+                width: 65%;
+                margin-left: 150px;
+                font-size: .9rem;
+            }
+        }
+        
+        .CommentsDisplay {
+            width: 100%;
+
+            .comment-input {
+                margin-left: 16%;
+                width: 100%;
+        
+        
+                .comment-header {
+                    font-size: .7rem;
+                    font-weight: bold;
+                    color: $silver;
+                    margin-left: 7%;
+                }
+        
+                .comment-input__field {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    width: 80%;
+                    
+                    .comment-profile {
+                        border-radius: 50%;
+                        width: 48px;
+                        height: 46px;
+                    }
+
+                    .comment-input__form {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: space-between;
+                        width: 100%;
+                        margin: 0 2%;
+
+                        .comment-input {
+                            background-color: $alabaster;
+                            font-size: 14px;
+                            width: 73%;
+                            padding: 0 2%;
+                            outline: none;
+                            border: 1px solid $mercury;
+                            border-radius: 3px;
+                            font-size: 12px;
+                            color: $black;
+                            margin-left: 0%;
+                            
+                        }
+            
+                        .comment-button {
+                            background-color: $blue;
+                            color: white;
+                            width: 20%;
+                            padding: 10px 30px;
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        
+            .comment-list {
+                @include add-divider();
+
+                .Comments {
+                    border-right: 2px solid $alabaster;
+                    border-bottom: 2px solid $alabaster;
+
+                    .name-container {
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: flex-start;
+                        width: 60%;
+                        margin: 0;
+                        border: none;
+            
+                        .name {
+                          color: $black;
+                          line-height: 50px;
+                          font-weight: bold;
+                          font-size: 1rem;
+                          margin: 4% 0 0 3%;
+                        }
+              
+                        .circle {
+                          background: $mercury;
+                          margin: 8% 0 0 0;
+                          border-radius: 50%;
+                          width: 48px;
+                          height: 46px;
+                        }
+              
+                        .date {
+                          font-size: .9rem;
+                          color: $silver;
+                          margin: 4% 0 0 2%; 
+                          line-height: 50px;
+                        }
+                      }
+            
+                      .comment {
+                        font-weight: normal;
+                        font-size: .8rem;
+                        width: 85%;
+                        color: $black;
+                        margin: -3% 0 3% 8%;
+                      }
+                }
+
+              
+            }
+        }
+
+    }
+
+    .more-content__next-videos {
+
+        .NextVideoList {
+
+            .NextVideoList__header {
+                font-size: .8rem;
+                font-weight: bold;
+                color: $silver;
+                margin: 10% 6%;
+            }
+
+            .NextVideo {
+                margin: 6% 6%;
+                width: 90%;
+                display: flex;
+
+                img {
+                    width: 110px;
+                    height: 65px;
+                    border-radius: 5px;
+                }
+
+                .NextVideo-info {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    margin-left: 5%;
+
+                    .NextVideo__title {
+                        font-weight: bold;
+                    }
+    
+                    .NextVideo__user {
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }   
+    }
+    
+}
+
+
+@import './media-queries/app_tablet-view';
+
+@import './media-queries/app_mobile-view';
