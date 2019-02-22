@@ -16,7 +16,6 @@ class App extends Component {
             render={() => (
               <Home
                 userComments={this.props.userComments}
-                video={this.props.video}
               />
             )}
           />

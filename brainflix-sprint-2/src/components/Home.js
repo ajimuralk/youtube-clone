@@ -13,12 +13,13 @@ import axios from "axios";
 const api_key = "4edb152d-f186-4793-836c-d5befa07ea2f";
 const videosUrl = `https://project-2-api.herokuapp.com/videos/?api_key=${api_key}`;
 
-const mainVideoUrl = (id) => `https://project-2-api.herokuapp.com/videos/${id}?api_key=${api_key}`;
+const mainVideoUrl = id =>
+  `https://project-2-api.herokuapp.com/videos/${id}?api_key=${api_key}`;
 
 class Home extends Component {
   state = {
     videos: [],
-    mainVideo: {}
+    mainVideo: null
   };
 
   //VIDEO API
@@ -29,22 +30,19 @@ class Home extends Component {
         this.setState({
           videos: res.data
         });
-    })
+      })
       .then(res => {
-        axios
-          .get(mainVideoUrl("1af0jruup5gu"))
-          .then(res => {
-            this.setState({
-              mainVideo: res.data
-            })
-            console.log(this.state.mainVideo, "in last axios req")
+        axios.get(mainVideoUrl("1af0jruup5gu")).then(res => {
+          this.setState({
+            mainVideo: res.data
           });
+        });
       });
-  };
+  }
 
   render() {
-    if(this.state.mainVideo === null) return "Loading..."
-    console.log(this.state.mainVideo, "in render")
+    if (this.state.mainVideo === null) return "Loading...";
+    console.log(this.state.mainVideo);
     return (
       <div>
         <Nav logo={logo} profilePicture={profilePicture} />
