@@ -5,7 +5,7 @@ class Nav extends Component {
   render() {
     return (
       <nav className="Nav">
-        <Link to="/">
+        <Link to="/" onClick={() => this.location.reload()}>
           <img className="Nav__logo" src={this.props.logo} alt="logo" />
         </Link>
         <div className="Navlinks">

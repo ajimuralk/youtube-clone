@@ -3,18 +3,24 @@ import NextVideo from "./NextVideo";
 
 class NextVideoList extends Component {
   render() {
-    const videoList = this.props.sideVideo.map((video, i) => {
-      return (
-        <NextVideo
-          image={video.image}
-          title={video.title}
-          user={video.channel}
-          id={video.id}
-          key={i}
-          switchVideo={this.props.switchVideo}
-        />
-      );
-    });
+    const videoList = this.props.sideVideo
+      .map((video, i) => {
+        return (
+          <NextVideo
+            image={video.image}
+            title={video.title}
+            user={video.channel}
+            id={video.id}
+            key={i}
+            switchVideo={this.props.switchVideo}
+          />
+        );
+    })
+      .filter(video => {
+          return (
+            video.props.id !== this.props.currentVideoId
+          )
+      });
 
     return (
       <div className="NextVideoList">

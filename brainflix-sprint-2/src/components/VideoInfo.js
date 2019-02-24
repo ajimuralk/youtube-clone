@@ -8,20 +8,20 @@ const date = (d) => {
 
 class VideoInfo extends Component {
   render() {
-    // const { video } = this.props.mainVideo
+    const { ...video } = this.props.mainVideo
       return (
         <section className="VideoInfo">
-          <h1 className="VideoInfo__header">{this.props.mainVideo.title}</h1>
+          <h1 className="VideoInfo__header">{video.title}</h1>
           <div className="VideoInfo__details">
-            <span className="user">By {this.props.mainVideo.channel}</span>
-            <span className="date">{date(this.props.mainVideo.timestamp)}</span>
-            <span className="likes">{this.props.mainVideo.likes}</span>
+            <span className="user">By {video.channel}</span>
+            <span className="date">{date(video.timestamp)}</span>
+            <span className="likes">{video.likes}</span>
             <img className="likes__icon" src={likesIcon} alt="heart-icon" />
-            <span className="views">{this.props.mainVideo.views}</span>
+            <span className="views">{video.views}</span>
             <img className="views__icon" src={viewsIcon} alt="view-icon" />
           </div>
           <div className="divider" />
-          <p className="VideoInfo__p">{this.props.mainVideo.description}</p>
+          <p className="VideoInfo__p">{video.description}</p>
         </section>
       );
   }

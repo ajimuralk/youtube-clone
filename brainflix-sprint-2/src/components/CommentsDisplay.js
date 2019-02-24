@@ -17,7 +17,7 @@ class CommentsDisplay extends Component {
     return (
       <section className="CommentsDisplay">
         <div className="comment-input">
-          <h4>3 Comments</h4>
+          <h4>{commentList.length} Comments</h4>
           <span className="comment-header">JOIN THE CONVERSATION</span>
           <div className="comment-input__field">
             <img

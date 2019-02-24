@@ -71,7 +71,7 @@ class Home extends Component {
 
   render() {
     if (this.state.mainVideo === null) return "Loading...";
-    console.log(this.state.mainVideo);
+    console.log(this.state.mainVideo.id);
     return (
       <div>
         <Nav logo={logo} profilePicture={profilePicture} />
@@ -87,6 +87,7 @@ class Home extends Component {
           <aside className="more-content__next-videos">
             <NextVideoList
               sideVideo={this.state.videos}
+              currentVideoId={this.state.mainVideo.id}
               switchVideo={this.switchVideo}
             />
           </aside>
