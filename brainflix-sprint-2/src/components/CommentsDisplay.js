@@ -7,8 +7,8 @@ class CommentsDisplay extends Component {
       return (
         <Comments
           name={comment.name}
-          date={comment.date}
-          text={comment.text}
+          timestamp={comment.timestamp}
+          comment={comment.comment}
           key={i}
         />
       );

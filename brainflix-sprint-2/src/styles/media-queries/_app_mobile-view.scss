@@ -581,15 +581,18 @@
                 }
     
                 .NextVideo {
-                    margin: 8% 3%;
-                    width: 90%;
-                    display: flex;
-    
-                    .NextVideo-info {
+
+                    .NextVideo-link {
+                      margin: 8% 3%;
+                      width: 90%;
+      
+                      .NextVideo-info {
                         margin-left: 5%;
                         width: 95%;
     
                     }
+                    }
+        
                 }
             }   
         }

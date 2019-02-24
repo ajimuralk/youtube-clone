@@ -7,10 +7,10 @@ import { BrowserRouter} from "react-router-dom";
 
 const userComments = [
   {
-    name: "Michael Lyons",
+    name: "*****",
     date: "7/4/2018",
     text:
-      "They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of acconcert I have EVER witnessed."
+      ""
   },
   {
     name: "Gary Wong",

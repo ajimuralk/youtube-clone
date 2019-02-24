@@ -9,7 +9,9 @@ class NextVideoList extends Component {
           image={video.image}
           title={video.title}
           user={video.channel}
+          id={video.id}
           key={i}
+          switchVideo={this.props.switchVideo}
         />
       );
     });

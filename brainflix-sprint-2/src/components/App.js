@@ -10,15 +10,10 @@ class App extends Component {
     return (
       <div className="App">
         <Switch>
-          <Route
-            path="/"
-            exact
-            render={() => (
-              <Home
-                userComments={this.props.userComments}
-              />
-            )}
-          />
+          <Route path="/" exact component={Home} />
+          <Route path="/videos/:id" render={(props => {
+            return <Home {...props} />
+          })} />
           <Route path="/upload" component={Upload} />
         </Switch>
       </div>

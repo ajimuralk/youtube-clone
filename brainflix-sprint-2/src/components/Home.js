@@ -12,13 +12,16 @@ import axios from "axios";
 
 const api_key = "4edb152d-f186-4793-836c-d5befa07ea2f";
 const videosUrl = `https://project-2-api.herokuapp.com/videos/?api_key=${api_key}`;
+const defaultVideo = "1af0jruup5gu"
 
 const mainVideoUrl = id =>
   `https://project-2-api.herokuapp.com/videos/${id}?api_key=${api_key}`;
 
+
 class Home extends Component {
   state = {
     videos: [],
+    commentList: [],
     mainVideo: null
   };
 
@@ -31,13 +34,39 @@ class Home extends Component {
           videos: res.data
         });
       })
+      .catch(err => {
+        console.log(err);
+      })
       .then(res => {
-        axios.get(mainVideoUrl("1af0jruup5gu")).then(res => {
-          this.setState({
-            mainVideo: res.data
+        const propsId = this.props.match.params.id;
+        const videoId = propsId ? propsId : defaultVideo; 
+        axios
+          .get(mainVideoUrl(videoId))
+          .then(res => {
+            this.setState({
+              mainVideo: res.data,
+              commentList: res.data.comments
+            });
+          })
+          .catch(err => {
+            console.log(err);
           });
-        });
       });
+  }
+
+  switchVideo() {
+    const videoId = this.props.match.params.id;
+    axios
+    .get(mainVideoUrl(videoId))
+    .then(res => {
+      this.setState({
+        mainVideo: res.data,
+        commentList: res.data.comments
+      });
+    })
+    .catch(err => {
+      console.log(err)
+    });
   }
 
   render() {
@@ -46,17 +75,20 @@ class Home extends Component {
     return (
       <div>
         <Nav logo={logo} profilePicture={profilePicture} />
-        <Video />
+        <Video image={this.state.mainVideo.image} video={this.state.mainVideo.video} />
         <div className="more-content">
           <div className="more-content__this-video">
             <VideoInfo mainVideo={this.state.mainVideo} />
             <CommentsDisplay
               profilePicture={profilePicture}
-              userComments={this.props.userComments}
+              userComments={this.state.commentList}
             />
           </div>
           <aside className="more-content__next-videos">
-            <NextVideoList sideVideo={this.state.videos} />
+            <NextVideoList
+              sideVideo={this.state.videos}
+              switchVideo={this.switchVideo}
+            />
           </aside>
         </div>
       </div>

@@ -319,21 +319,23 @@ body {
   margin: 10% 6%;
 }
 
-.more-content .more-content__next-videos .NextVideoList .NextVideo {
-  margin: 6% 6%;
-  width: 90%;
+.more-content .more-content__next-videos .NextVideoList .NextVideo .NextVideo-link {
+  text-decoration: none;
+  color: #323232;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 6% 6%;
+  width: 90%;
 }
 
-.more-content .more-content__next-videos .NextVideoList .NextVideo img {
+.more-content .more-content__next-videos .NextVideoList .NextVideo .NextVideo-link img {
   width: 110px;
   height: 65px;
   border-radius: 5px;
 }
 
-.more-content .more-content__next-videos .NextVideoList .NextVideo .NextVideo-info {
+.more-content .more-content__next-videos .NextVideoList .NextVideo .NextVideo-link .NextVideo-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,11 +346,11 @@ body {
   margin-left: 5%;
 }
 
-.more-content .more-content__next-videos .NextVideoList .NextVideo .NextVideo-info .NextVideo__title {
+.more-content .more-content__next-videos .NextVideoList .NextVideo .NextVideo-link .NextVideo-info .NextVideo__title {
   font-weight: bold;
 }
 
-.more-content .more-content__next-videos .NextVideoList .NextVideo .NextVideo-info .NextVideo__user {
+.more-content .more-content__next-videos .NextVideoList .NextVideo .NextVideo-link .NextVideo-info .NextVideo__user {
   font-size: 0.9rem;
 }
 
@@ -445,7 +447,7 @@ body {
 .Upload .Upload__area .upload-input .header {
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin-bottom: .5%;
+  margin-bottom: 0.5%;
 }
 
 .Upload .Upload__area .upload-input .input-field {
@@ -477,7 +479,7 @@ body {
   font-size: 0.7rem;
   font-weight: bold;
   color: #afafaf;
-  margin-bottom: .5%;
+  margin-bottom: 0.5%;
 }
 
 @media (max-width: 1100px) {
@@ -1631,14 +1633,11 @@ body {
   .more-content .more-content__next-videos .NextVideoList .NextVideoList__header {
     margin: 8% 3% 8% 3%;
   }
-  .more-content .more-content__next-videos .NextVideoList .NextVideo {
+  .more-content .more-content__next-videos .NextVideoList .NextVideo .NextVideo-link {
     margin: 8% 3%;
     width: 90%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
-  .more-content .more-content__next-videos .NextVideoList .NextVideo .NextVideo-info {
+  .more-content .more-content__next-videos .NextVideoList .NextVideo .NextVideo-link .NextVideo-info {
     margin-left: 5%;
     width: 95%;
   }

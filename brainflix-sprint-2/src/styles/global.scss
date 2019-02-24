@@ -278,27 +278,32 @@ body {
       }
 
       .NextVideo {
-        margin: 6% 6%;
-        width: 90%;
-        display: flex;
 
-        img {
-          width: 110px;
-          height: 65px;
-          border-radius: 5px;
-        }
-
-        .NextVideo-info {
+        .NextVideo-link {
+          text-decoration: none;
+          color: $black;
           display: flex;
-          flex-flow: column nowrap;
-          margin-left: 5%;
+          margin: 6% 6%;
+          width: 90%;
 
-          .NextVideo__title {
-            font-weight: bold;
+          img {
+            width: 110px;
+            height: 65px;
+            border-radius: 5px;
           }
 
-          .NextVideo__user {
-            font-size: 0.9rem;
+          .NextVideo-info {
+            display: flex;
+            flex-flow: column nowrap;
+            margin-left: 5%;
+
+            .NextVideo__title {
+              font-weight: bold;
+            }
+
+            .NextVideo__user {
+              font-size: 0.9rem;
+            }
           }
         }
       }
@@ -310,40 +315,37 @@ body {
   .container {
     margin: 2% 12%;
     width: 78%;
-    
 
     .divider {
-        @include add-divider();
-        width: 93%;
-        margin: 2% 0 3% 0;
+      @include add-divider();
+      width: 93%;
+      margin: 2% 0 3% 0;
     }
     .divider-btm {
-        @include add-divider();
-        width: 93%;
-        margin: 3% 0 3% 0;
+      @include add-divider();
+      width: 93%;
+      margin: 3% 0 3% 0;
     }
 
     button {
-        float: right;
-        background-color: $blue;
-        text-decoration: none;
-        font-size: 0.9rem;
-        font-weight: 600;
-        border-radius: 3px;
-        border: none;
-        padding: 1% 3%;
+      float: right;
+      background-color: $blue;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-radius: 3px;
+      border: none;
+      padding: 1% 3%;
 
-        &.publish-btn {
-            color: white;
-            margin-right: 7%;
-
-        }
-        &.cancel-btn {
-            background-color: white;
-            color: $blue;
-        }
+      &.publish-btn {
+        color: white;
+        margin-right: 7%;
+      }
+      &.cancel-btn {
+        background-color: white;
+        color: $blue;
+      }
     }
-    
   }
 
   .Upload__area {
@@ -370,8 +372,8 @@ body {
       margin-left: 2%;
 
       .header {
-          align-self: flex-start;
-          margin-bottom: .5%;
+        align-self: flex-start;
+        margin-bottom: 0.5%;
       }
 
       .input-field {
@@ -388,10 +390,8 @@ body {
       }
 
       input.input-field {
-          
-          height: 25%;
-          margin-bottom: 2%;
-          
+        height: 25%;
+        margin-bottom: 2%;
       }
 
       textarea.input-field {
@@ -404,7 +404,7 @@ body {
   }
   .header {
     @include add-header-sm();
-    margin-bottom: .5%;
+    margin-bottom: 0.5%;
   }
 }
 
