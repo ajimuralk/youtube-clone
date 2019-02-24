@@ -3,7 +3,8 @@ import React, { Component } from "react";
 
 class Video extends Component {
   render() {
-    const videoUrl = `${this.props.video}?api_key=4edb152d-f186-4793-836c-d5befa07ea2f`
+    const videoUrl = `${this.props.video}${this.props.api_key}`
+    
     return (
       <main className="Video">
         <video

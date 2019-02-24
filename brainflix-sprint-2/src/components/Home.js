@@ -10,8 +10,8 @@ import "../styles/App.css";
 import "../styles/global.css";
 import axios from "axios";
 
-const api_key = "4edb152d-f186-4793-836c-d5befa07ea2f";
-const videosUrl = `https://project-2-api.herokuapp.com/videos/?api_key=${api_key}`;
+const api_key = "?api_key=4edb152d-f186-4793-836c-d5befa07ea2f";
+const videosUrl = `https://project-2-api.herokuapp.com/videos/${api_key}`;
 const defaultVideo = "1af0jruup5gu"
 
 const mainVideoUrl = id =>
@@ -75,7 +75,10 @@ class Home extends Component {
     return (
       <div>
         <Nav logo={logo} profilePicture={profilePicture} />
-        <Video image={this.state.mainVideo.image} video={this.state.mainVideo.video} />
+        <Video image={this.state.mainVideo.image} 
+               video={this.state.mainVideo.video}
+               api_key={api_key}
+        />
         <div className="more-content">
           <div className="more-content__this-video">
             <VideoInfo mainVideo={this.state.mainVideo} />
