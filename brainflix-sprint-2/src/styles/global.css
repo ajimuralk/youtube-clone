@@ -1202,10 +1202,10 @@ body {
   .more-content .more-content__next-videos .NextVideoList .NextVideo .NextVideo-info {
     margin-left: 2%;
     width: 50%;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .more-content .more-content__next-videos .NextVideoList .NextVideo .NextVideo-info .NextVideo__user {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 
