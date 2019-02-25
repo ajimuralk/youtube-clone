@@ -29,6 +29,20 @@
 
   .more-content {
     .more-content__this-video {
+      .VideoInfo {
+        .VideoInfo__details {
+          display: block;
+          width: 90%;
+
+          .views {
+            margin-right: 5px;
+          }
+
+          .likes {
+            margin-right: 55%;
+          }
+        }
+      }
       .CommentsDisplay {
         .comment-input {
           .comment-input__field {
@@ -76,11 +90,11 @@
             .NextVideo-info {
               margin-left: 2%;
               width: 45%;
-              font-size: .8rem;
+              font-size: 0.8rem;
 
               .NextVideo__user {
                 margin-top: 3%;
-                font-size: .8rem;
+                font-size: 0.8rem;
               }
             }
           }
@@ -240,8 +254,43 @@
 
   .more-content {
     .more-content__this-video {
-      width: 100%;
+      width: 115%;
       border-right: none;
+
+      .VideoInfo {
+        .VideoInfo__details {
+          display: block;
+          width: 70%;
+          .user {
+            float: left;
+            font-weight: bold;
+          }
+          .date {
+            float: left;
+            margin: 2px 10px;
+            color: $silver;
+            font-size: 0.9rem;
+          }
+
+          .views,
+          .views__icon,
+          .likes,
+          .likes__icon {
+            float: right;
+            margin: 3px;
+            font-size: 0.9rem;
+            color: $black;
+          }
+
+          .views {
+            margin-right: 0;
+          }
+
+          .likes {
+            margin-right: 44%;
+          }
+        }
+      }
 
       .CommentsDisplay {
         .comment-input {
@@ -376,11 +425,11 @@
             .NextVideo-info {
               margin-left: 5%;
               width: 45%;
-              font-size: .8rem;
+              font-size: 0.8rem;
 
               .NextVideo__user {
                 margin-top: 0;
-                font-size: .8rem;
+                font-size: 0.8rem;
               }
             }
           }
@@ -453,14 +502,10 @@
 
     .more-content__this-video {
       .VideoInfo {
-        .VideoInfo__header {
-          margin-left: 3%;
-          font-size: 1.5rem;
-        }
 
         .VideoInfo__details {
-          width: 50%;
-          margin-left: 3%;
+          width: 104%;
+          margin-left: 0;
 
           .user {
             float: left;
@@ -474,19 +519,12 @@
             font-size: 0.9rem;
           }
 
-          .views,
-          .views__icon,
-          .likes,
-          .likes__icon {
-            float: right;
-            margin: 5px;
-            margin-top: 15%;
-            font-size: 0.9rem;
-            color: $black;
+          .views {
+            margin-right: 5px;
           }
 
-          .views {
-            margin-right: 23px;
+          .likes {
+            margin-right: 60%;
           }
         }
 
@@ -606,7 +644,7 @@
 
         .NextVideo {
           .NextVideo-link {
-            margin: 8% 3%;
+            margin: 0% 3%;
             width: 90%;
 
             .NextVideo-info {

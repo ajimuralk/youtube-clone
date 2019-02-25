@@ -1229,6 +1229,16 @@ body {
     width: 100%;
     height: 100%;
   }
+  .more-content .more-content__this-video .VideoInfo .VideoInfo__details {
+    display: block;
+    width: 90%;
+  }
+  .more-content .more-content__this-video .VideoInfo .VideoInfo__details .views {
+    margin-right: 5px;
+  }
+  .more-content .more-content__this-video .VideoInfo .VideoInfo__details .likes {
+    margin-right: 55%;
+  }
   .more-content .more-content__this-video .CommentsDisplay .comment-input .comment-input__field .comment-input__form .comment-button {
     font-size: 0.6rem;
   }
@@ -1262,11 +1272,11 @@ body {
   .more-content .more-content__next-videos .NextVideoList .NextVideo .NextVideo-link .NextVideo-info {
     margin-left: 2%;
     width: 45%;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .more-content .more-content__next-videos .NextVideoList .NextVideo .NextVideo-link .NextVideo-info .NextVideo__user {
     margin-top: 3%;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .Upload .container {
     margin: 2% 4%;
@@ -1437,8 +1447,37 @@ body {
     margin: -16% 5% 5% 0;
   }
   .more-content .more-content__this-video {
-    width: 100%;
+    width: 115%;
     border-right: none;
+  }
+  .more-content .more-content__this-video .VideoInfo .VideoInfo__details {
+    display: block;
+    width: 70%;
+  }
+  .more-content .more-content__this-video .VideoInfo .VideoInfo__details .user {
+    float: left;
+    font-weight: bold;
+  }
+  .more-content .more-content__this-video .VideoInfo .VideoInfo__details .date {
+    float: left;
+    margin: 2px 10px;
+    color: #afafaf;
+    font-size: 0.9rem;
+  }
+  .more-content .more-content__this-video .VideoInfo .VideoInfo__details .views,
+  .more-content .more-content__this-video .VideoInfo .VideoInfo__details .views__icon,
+  .more-content .more-content__this-video .VideoInfo .VideoInfo__details .likes,
+  .more-content .more-content__this-video .VideoInfo .VideoInfo__details .likes__icon {
+    float: right;
+    margin: 3px;
+    font-size: 0.9rem;
+    color: #323232;
+  }
+  .more-content .more-content__this-video .VideoInfo .VideoInfo__details .views {
+    margin-right: 0;
+  }
+  .more-content .more-content__this-video .VideoInfo .VideoInfo__details .likes {
+    margin-right: 44%;
   }
   .more-content .more-content__this-video .CommentsDisplay .comment-input {
     margin-left: 3%;
@@ -1574,11 +1613,11 @@ body {
   .more-content .more-content__next-videos .NextVideoList .NextVideo .NextVideo-link .NextVideo-info {
     margin-left: 5%;
     width: 45%;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .more-content .more-content__next-videos .NextVideoList .NextVideo .NextVideo-link .NextVideo-info .NextVideo__user {
     margin-top: 0;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -1662,13 +1701,9 @@ body {
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
   }
-  .more-content .more-content__this-video .VideoInfo .VideoInfo__header {
-    margin-left: 3%;
-    font-size: 1.5rem;
-  }
   .more-content .more-content__this-video .VideoInfo .VideoInfo__details {
-    width: 50%;
-    margin-left: 3%;
+    width: 104%;
+    margin-left: 0;
   }
   .more-content .more-content__this-video .VideoInfo .VideoInfo__details .user {
     float: left;
@@ -1681,18 +1716,11 @@ body {
     color: #afafaf;
     font-size: 0.9rem;
   }
-  .more-content .more-content__this-video .VideoInfo .VideoInfo__details .views,
-  .more-content .more-content__this-video .VideoInfo .VideoInfo__details .views__icon,
-  .more-content .more-content__this-video .VideoInfo .VideoInfo__details .likes,
-  .more-content .more-content__this-video .VideoInfo .VideoInfo__details .likes__icon {
-    float: right;
-    margin: 5px;
-    margin-top: 15%;
-    font-size: 0.9rem;
-    color: #323232;
-  }
   .more-content .more-content__this-video .VideoInfo .VideoInfo__details .views {
-    margin-right: 23px;
+    margin-right: 5px;
+  }
+  .more-content .more-content__this-video .VideoInfo .VideoInfo__details .likes {
+    margin-right: 60%;
   }
   .more-content .more-content__this-video .VideoInfo .divider {
     width: 84%;
@@ -1797,7 +1825,7 @@ body {
     margin: 8% 3% 8% 3%;
   }
   .more-content .more-content__next-videos .NextVideoList .NextVideo .NextVideo-link {
-    margin: 8% 3%;
+    margin: 0% 3%;
     width: 90%;
   }
   .more-content .more-content__next-videos .NextVideoList .NextVideo .NextVideo-link .NextVideo-info {
