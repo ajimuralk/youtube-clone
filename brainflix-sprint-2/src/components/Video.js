@@ -12,7 +12,6 @@ class Video extends Component {
           controls
           autoPlay
           src={videoUrl}
-          poster={this.props.image}
         />
       </main>
     );
