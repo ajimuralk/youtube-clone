@@ -5,8 +5,8 @@ import Video from "./Video";
 import VideoInfo from "./VideoInfo";
 import NextVideoList from "./NextVideoList";
 import CommentsDisplay from "./CommentsDisplay";
-import logo from "../BrainFlix-Sprint-1/4.0 - Assets/Logo/Logo-brainflix.png";
-import profilePicture from "../BrainFlix-Sprint-1/4.0 - Assets/Images/Mohan-muruge.jpg";
+import logo from "../assets/Logo/Logo-brainflix.png";
+import profilePicture from "../assets/Images/Mohan-muruge.jpg";
 import "../styles/App.css";
 import "../styles/global.css";
 

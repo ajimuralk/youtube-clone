@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Nav from "./Nav";
-import logo from "../BrainFlix-Sprint-1/4.0 - Assets/Logo/Logo-brainflix.png";
-import profilePicture from "../BrainFlix-Sprint-1/4.0 - Assets/Images/Mohan-muruge.jpg";
+import logo from "../assets/Logo/Logo-brainflix.png";
+import profilePicture from "../assets/Images/Mohan-muruge.jpg";
 
 class Upload extends Component {
   render() {

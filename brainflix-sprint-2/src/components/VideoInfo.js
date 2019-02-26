@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import likesIcon from "../BrainFlix-Sprint-1/4.0 - Assets/Icons/PNG/Icon-likes.png";
-import viewsIcon from "../BrainFlix-Sprint-1/4.0 - Assets/Icons/PNG/Icon-views.png";
+import likesIcon from "../assets/Icons/PNG/Icon-likes.png";
+import viewsIcon from "../assets/Icons/PNG/Icon-views.png";
 
 const date = (d) => {
   return new Date(d).toLocaleDateString();
