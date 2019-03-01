@@ -9,11 +9,13 @@ import logo from "../assets/Logo/Logo-brainflix.png";
 import profilePicture from "../assets/Images/Mohan-muruge.jpg";
 
 const api_key = "?api_key=4edb152d-f186-4793-836c-d5befa07ea2f";
-const videosUrl = `https://project-2-api.herokuapp.com/videos/${api_key}`;
+
+const videosUrl = `http://localhost:8080/videos`
 const defaultVideo = "1af0jruup5gu";
 
-const mainVideoUrl = id =>
-  `https://project-2-api.herokuapp.com/videos/${id}?api_key=${api_key}`;
+const mainVideoUrl = id => `http://localhost:8080/videos/${id}`;
+
+
 
 class Home extends Component {
   state = {

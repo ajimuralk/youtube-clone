@@ -1,18 +1,14 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const bodyParser = require('body-parser');
-const videoArray = require('./video-list');
-const videoListById = require('./video-details')
+const videoRoutes = require('./routes/videoRoutes');
 
-app.use(bodyParser.urlencoded({extended: false}));
-
-app.get('/videos', (req, res) => {
-  const videoList = videoArray.map(video => {
-    return video
-  })
-  res.send(videoList)
-})
+app.use(cors());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use('/videos', videoRoutes);
 
 app.listen(8080, () => {
-  console.log('Server started: PORT 8080')
-})
+  console.log('Server started: PORT 8080');
+});
