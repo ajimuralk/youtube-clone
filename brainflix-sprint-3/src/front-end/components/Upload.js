@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Nav from './Nav';
-import logo from '../assets/Logo/Logo-brainflix.png';
-import profilePicture from '../assets/Images/Mohan-muruge.jpg';
+import logo from '../../assets/Logo/Logo-brainflix.png';
+import profilePicture from '../../assets/Images/Mohan-muruge.jpg';
 const videosUrl = `http://localhost:8080/videos`;
 const photoUrl = `https://images.unsplash.com/photo-1493640589868-1623c9183146?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1496&q=80`;
 

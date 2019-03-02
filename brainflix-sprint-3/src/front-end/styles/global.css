@@ -1,11 +1,6 @@
-@font-face {
-  font-family: "Avenir Next";
-  src: url("/assets/_Global Font/AvenirNextProLT");
-}
-
 body {
   margin: 0;
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next';
   color: #323232;
 }
 
@@ -46,7 +41,7 @@ body {
 }
 
 .Nav .Navlinks .Nav__search {
-  background-image: url("../assets/Icons/PNG/Icon-search.png");
+  background-image: url("../../assets/Icons/PNG/Icon-search.png");
   background-color: #fafafa;
   background-size: 8%;
   background-repeat: no-repeat;
@@ -64,7 +59,7 @@ body {
 }
 
 .Nav .Navlinks .Nav__button {
-  background-image: url("../assets/Icons/PNG/Icon-upload.png");
+  background-image: url("../../assets/Icons/PNG/Icon-upload.png");
   background-size: 12%;
   background-repeat: no-repeat;
   background-position: left;
@@ -472,7 +467,8 @@ body {
 .Upload .Upload__area .upload-input textarea.input-field {
   height: 40%;
   resize: none;
-  padding-top: 2%;
+  padding: 2%;
+  text-indent: 0;
   min-height: 40%;
 }
 

@@ -5,8 +5,8 @@ import Video from './Video';
 import VideoInfo from './VideoInfo';
 import NextVideoList from './NextVideoList';
 import CommentsDisplay from './CommentsDisplay';
-import logo from '../assets/Logo/Logo-brainflix.png';
-import profilePicture from '../assets/Images/Mohan-muruge.jpg';
+import logo from '../../assets/Logo/Logo-brainflix.png';
+import profilePicture from '../../assets/Images/Mohan-muruge.jpg';
 
 const api_key = '?api_key=4edb152d-f186-4793-836c-d5befa07ea2f';
 

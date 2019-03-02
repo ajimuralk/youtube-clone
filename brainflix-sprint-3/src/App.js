@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
-import Home from "./components/Home";
-import Upload from "./components/Upload";
-import "./styles/App.css";
-import "./styles/global.css";
+import Home from "./front-end/components/Home";
+import Upload from "./front-end/components/Upload";
+import "./front-end/styles/App.css";
+import "./front-end/styles/global.css";
 
 class App extends Component {
   render() {
