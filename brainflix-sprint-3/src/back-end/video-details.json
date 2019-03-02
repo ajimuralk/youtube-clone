@@ -313,31 +313,5 @@
         "timestamp": 1542262984046
       }
     ]
-  },
-  {
-    "id": "nt61bor0cb8n",
-    "title": " Cool Vid",
-    "channel": null,
-    "image": "https://i.imgur.com/l2Xfgpl.jpg",
-    "description": "Cool story",
-    "views": 0,
-    "likes": 0,
-    "duration": "2:54",
-    "video": "https://project-2-api.herokuapp.com/stream",
-    "timestamp": "3/1/2019",
-    "comments": []
-  },
-  {
-    "id": "8xf8sh4whd33",
-    "title": " Cool Vid",
-    "channel": null,
-    "image": "https://i.imgur.com/l2Xfgpl.jpg",
-    "description": "Cool story",
-    "views": 0,
-    "likes": 0,
-    "duration": "2:54",
-    "video": "https://project-2-api.herokuapp.com/stream",
-    "timestamp": "3/1/2019",
-    "comments": []
   }
 ]

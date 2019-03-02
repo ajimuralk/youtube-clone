@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const fs = require('fs');
-const randomize = require('randomatic')
+const randomize = require('randomatic');
+const generateName = require('sillyname');
 const videoArray = require('../video-list.json');
 const videoListById = require('../video-details.json');
 
@@ -24,17 +25,18 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
   const { image, title, description } = req.body;
   const id = randomize('a0', 12);
+  const channel = generateName();
   const video = {
     id: id,
-    image: image,
     title: title,
-    description: description
+    channel: channel,
+    image: image
   };
 
   const videoDetails = {
     id: id,
     title: title,
-    channel: null,
+    channel: channel,
     image: image,
     description: description,
     views: 0,
