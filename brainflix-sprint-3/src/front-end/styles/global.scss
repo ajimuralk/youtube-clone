@@ -397,7 +397,8 @@ body {
       textarea.input-field {
         height: 40%;
         resize: none;
-        padding-top: 2%;
+        padding: 2%;
+        text-indent: 0;
         min-height: 40%;
       }
     }
