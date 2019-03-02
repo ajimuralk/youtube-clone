@@ -15,10 +15,10 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-  const id = req.params.id;
-  const selectedVideo = videoListById.find(video => {
-    return id === video.id;
-  });
+  const id = req.params.id,
+    selectedVideo = videoListById.find(video => {
+      return id === video.id;
+    });
   res.json(selectedVideo);
 });
 
@@ -32,6 +32,7 @@ router.post('/', (req, res) => {
     channel: channel,
     image: image
   };
+
   const videoDetails = {
     id: id,
     title: title,
@@ -48,7 +49,7 @@ router.post('/', (req, res) => {
 
   const newArray = [...videoArray, video];
   fs.writeFileSync('video-list.json', JSON.stringify(newArray));
-  
+
   const newVideoList = [...videoListById, videoDetails];
   fs.writeFileSync('video-details.json', JSON.stringify(newVideoList));
 

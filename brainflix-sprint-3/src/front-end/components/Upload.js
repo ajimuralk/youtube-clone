@@ -23,7 +23,7 @@ class Upload extends Component {
           this.titleInput.value = '';
           this.descriptionInput.value = '';
         });
-    };
+    }
   };
 
   render() {

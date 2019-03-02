@@ -8,8 +8,8 @@ $blue: #2196f3;
 
 //FONTS
 @font-face {
-  font-family: "Avenir Next";
-  src: url("/assets/_Global Font/AvenirNextProLT");
+  font-family: 'Avenir Next';
+  src: url('/assets/_Global Font/AvenirNextProLT');
 }
 
 //MIXIN
@@ -28,7 +28,7 @@ $blue: #2196f3;
 
 body {
   margin: 0;
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next';
   color: $black;
 }
 
@@ -49,7 +49,7 @@ body {
     margin-left: 70px;
 
     .Nav__search {
-      background-image: url("../assets/Icons/PNG/Icon-search.png");
+      background-image: url('../assets/Icons/PNG/Icon-search.png');
       background-color: $alabaster;
       background-size: 8%;
       background-repeat: no-repeat;
@@ -67,7 +67,7 @@ body {
     }
 
     .Nav__button {
-      background-image: url("../assets/Icons/PNG/Icon-upload.png");
+      background-image: url('../assets/Icons/PNG/Icon-upload.png');
       background-size: 12%;
       background-repeat: no-repeat;
       background-position: left;
@@ -409,6 +409,6 @@ body {
   }
 }
 
-@import "./media-queries/app_tablet-view";
+@import './media-queries/app_tablet-view';
 
-@import "./media-queries/app_mobile-view";
+@import './media-queries/app_mobile-view';
