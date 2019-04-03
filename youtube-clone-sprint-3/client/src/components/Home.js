@@ -23,6 +23,10 @@ class Home extends Component {
   };
 
   componentDidMount() {
+    // const propsId = this.props.match.params.id;
+    // const videoId = propsId ? propsId : defaultVideo;
+    this.switchVideo(defaultVideo);
+
     axios
       .get(videosUrl)
       .then(res => {
@@ -32,12 +36,14 @@ class Home extends Component {
       })
       .catch(err => {
         console.log(err);
-      })
-      .then(res => {
-        const propsId = this.props.match.params.id;
-        const videoId = propsId ? propsId : defaultVideo;
-        this.switchVideo(videoId);
       });
+  }
+
+  componentDidUpdate() {
+    if (!this.props.match.params.id) return;
+    else if (this.props.match.params.id !== this.state.mainVideo.id) {
+      this.switchVideo(this.props.match.params.id);
+    }
   }
 
   switchVideo(id) {

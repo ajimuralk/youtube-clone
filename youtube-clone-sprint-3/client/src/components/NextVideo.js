@@ -8,7 +8,6 @@ class NextVideo extends Component {
         <Link
           className="NextVideo-link"
           to={'/videos/' + this.props.id}
-          // onClick={() => this.switchVideo(this.props.id)}
         >
           <img src={this.props.image} alt="thumbnail" />
           <div className="NextVideo-info">
