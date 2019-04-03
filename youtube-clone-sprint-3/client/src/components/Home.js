@@ -23,8 +23,6 @@ class Home extends Component {
   };
 
   componentDidMount() {
-    // const propsId = this.props.match.params.id;
-    // const videoId = propsId ? propsId : defaultVideo;
     this.switchVideo(defaultVideo);
 
     axios
@@ -61,13 +59,13 @@ class Home extends Component {
   }
 
   render() {
+    console.log(this.state.mainVideo)
     if (this.state.mainVideo === null) return 'Loading...';
     return (
       <div>
         <Nav logo={logo} profilePicture={profilePicture} />
         <Video
-          image={this.state.mainVideo.image}
-          video={this.state.mainVideo.video}
+          video={this.state.mainVideo}
           api_key={api_key}
         />
         <div className="more-content">
