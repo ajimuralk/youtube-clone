@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-
 class Video extends Component {
   render() {
     const videoUrl = `${this.props.video}${this.props.api_key}`

@@ -5,15 +5,15 @@ import Video from './Video';
 import VideoInfo from './VideoInfo';
 import NextVideoList from './NextVideoList';
 import CommentsDisplay from './CommentsDisplay';
-import logo from '../../assets/Logo/Logo-brainflix.png';
-import profilePicture from '../../assets/Images/Mohan-muruge.jpg';
+import logo from '../assets/Logo/Logo-brainflix.png';
+import profilePicture from '../assets/Images/Mohan-muruge.jpg';
 
 const api_key = '?api_key=4edb152d-f186-4793-836c-d5befa07ea2f';
 
-const videosUrl = `http://localhost:8080/videos`;
+const videosUrl = `http://localhost:8085/videos`;
 const defaultVideo = '1af0jruup5gu';
 
-const mainVideoUrl = id => `http://localhost:8080/videos/${id}`;
+const mainVideoUrl = id => `http://localhost:8085/videos/${id}`;
 
 class Home extends Component {
   state = {
@@ -22,7 +22,6 @@ class Home extends Component {
     mainVideo: null
   };
 
-  //VIDEO API
   componentDidMount() {
     axios
       .get(videosUrl)

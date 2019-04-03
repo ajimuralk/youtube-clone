@@ -41,7 +41,7 @@ body {
 }
 
 .Nav .Navlinks .Nav__search {
-  background-image: url("../../assets/Icons/PNG/Icon-search.png");
+  background-image: url("../assets/Icons/PNG/Icon-search.png");
   background-color: #fafafa;
   background-size: 8%;
   background-repeat: no-repeat;
@@ -59,7 +59,7 @@ body {
 }
 
 .Nav .Navlinks .Nav__button {
-  background-image: url("../../assets/Icons/PNG/Icon-upload.png");
+  background-image: url("../assets/Icons/PNG/Icon-upload.png");
   background-size: 12%;
   background-repeat: no-repeat;
   background-position: left;
