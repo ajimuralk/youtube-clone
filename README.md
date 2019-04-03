@@ -1,11 +1,11 @@
 # YouTube Clone
-[Academic Project] - A video streaming SPA demonstrating competency in React, React-Router, Node, Express, APIs, in addition to other front-end fundamentals.
+[Academic Project] - A video streaming SPA demonstrating competency in React, React-Router, Node, Express, APIs, in addition to other front-end fundamentals
 
-<h2>About</h2>
+## About
 
 I created a full stack single page application, using React, Express, and Node.js. The video data, stream URL, and comments came from a designated API. The upload functionality exists for video title and description, but full functionality was not part of the project requirements. A mockup was provided by a UI/UX designer, and I was expected to produce a responsive app according to its specifications.    
  
-<h2>Key Learnings</h2>
+## Key Learnings
 
 - Grasped React fundamentals, such as component lifecycle methods, using props and state, and JSX.
 - Used React-Router for declarative routing. 
